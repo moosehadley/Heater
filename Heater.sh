@@ -5,7 +5,8 @@
 #Starting 8 threads, for 8 cores.
 echo "Heating up..."
 
-NUM_CORES=8
+#Subtract one core. We start counting from Zero.
+NUM_CORES=7
 PIDS=()
 
 for i in $(seq 0 $NUM_CORES); do
